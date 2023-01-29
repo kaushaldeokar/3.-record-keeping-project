@@ -21,7 +21,7 @@ function App() {
   const del=(id)=>{
     console.log(id);
     const updateItems=Items.filter((elem,ind)=>{
-      return ind!=id;
+      return ind!==id;
     })
     setItems(updateItems);
   }
